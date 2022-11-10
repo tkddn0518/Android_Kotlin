@@ -30,6 +30,11 @@ class LoginActivity : AppCompatActivity() {
             logIn(email, password)
         }
 
+        // SignUp Button
+        binding.btnSignUp.setOnClickListener {
+            startActivity(Intent(this, RegisterActivity::class.java))
+        }
+
     }
 
     // LogIn function
